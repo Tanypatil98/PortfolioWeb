@@ -1,5 +1,4 @@
-import local from "../assets/images/localhost_8000_.png"
-import img from "../assets/images/mainimg.png"
+
 
 const projects = [
     {
