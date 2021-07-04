@@ -42,7 +42,7 @@ const contact = () => {
               <li><FaPhone class="social-icon"></FaPhone><a href="tel:9624441873">+91 9624441873</a></li>
               <li><FiMail class="social-icon"></FiMail><a href="mailto:tanaypatil36@gmail.com">tanaypatil36@gmail.com</a></li>
           </ul>
-          <form data-netlify="true" name="Contact" method="post" onSubmit={handleSubmit}>
+          <form data-netlify="true" name="Contact" method="post" onSubmit={submitHandler}>
             <div className="form-group">
               <input type="hidden" name="form-name" value="Contact" />
               <input
