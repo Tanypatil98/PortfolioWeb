@@ -7,6 +7,30 @@ import {
 } from "react-icons/fa"
 const contact = () => {
   
+  const [name, setName] = useState('');
+  const [success, setSuceess] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [description, setDescription] = useState('');
+  const submitHandler = () => {
+    let formData = new FormData();
+    formData.set("name_your", name)
+  formData.set("email", email)
+  formData.set("subject", subject)
+  formData.set("message", description)
+
+    console.log(formData);
+    fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: formDara
+  }).then(() => {setSuceess('Thank you for Contact us. your message is Sent.');
+                setName('');
+                setEmail('');
+                setSubject('');
+                setDescription('');}).catch(error => alert(error))
+  }
+  
   return (
     <>
       <Seo title="Contact" />
@@ -18,25 +42,36 @@ const contact = () => {
               <li><FaPhone class="social-icon"></FaPhone><a href="tel:9624441873">+91 9624441873</a></li>
               <li><FiMail class="social-icon"></FiMail><a href="mailto:tanaypatil36@gmail.com">tanaypatil36@gmail.com</a></li>
           </ul>
-          <form>
+          <form data-netlify="true" name="Contact" method="post" onSubmit={handleSubmit}>
             <div className="form-group">
+              <input type="hidden" name="form-name" value="Contact" />
               <input
                 type="text"
                 name="name"
                 placeholder="name"
                 className="form-control"
+                onChange={(e) => setName(e.target.value)}
               />
               <input
                 type="email"
                 name="email"
                 placeholder="email"
                 className="form-control"
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <input
+                type="text"
+                name="subject"
+                placeholder="subject"
+                className="form-control"
+                onChange={(e) => setSubject(e.target.value)}
               />
               <textarea
                 name="message"
                 rows="5"
                 placeholder="message"
                 className="form-control"
+                onChange={(e) => setDescription(e.target.value)}
               ></textarea>
             </div>
             <button type="submit" className="submit-btn btn">
