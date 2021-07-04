@@ -49,9 +49,9 @@ const projects = [
   },{
     description: "It is the web portfolio created using gatsby js.",
     title: "Portfolio",
-    github: "",
+    github: "https://github.com/Tanypatil98/PortfolioWeb",
     stack: ["Html", "Css", "React", "Gatsby.Js",  "GraphQl"],
-    url: "",
+    url: "https://tanaypatil.netlify.app/",
     image: "https://tanypatil98.github.io/Portfolio/images/mainimg.PNG",
     index: 5,
     slug: "portfolio",
