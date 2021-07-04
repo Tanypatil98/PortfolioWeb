@@ -2,7 +2,6 @@ import React, { useState} from "react"
 import Seo from "../components/Seo"
 import {
   FaPhone,
-  FiMail,
   FaMapMarkerAlt
 } from "react-icons/fa"
 const contact = () => {
@@ -23,7 +22,7 @@ const contact = () => {
     fetch("/", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: formDara
+    body: formData
   }).then(() => {setSuceess('Thank you for Contact us. your message is Sent.');
                 setName('');
                 setEmail('');
@@ -81,7 +80,7 @@ const contact = () => {
         </article>
       </section>
     </>
-  )
+  );
 }
 
-export default contact
+export default contact;
