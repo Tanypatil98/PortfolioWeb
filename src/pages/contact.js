@@ -6,7 +6,12 @@ const contact = () => {
       <Seo title="Contact" />
       <section className="contact-page">
         <article className="contact-form">
-          <h3>get in touch</h3>
+          <h3>Get In Touch</h3>
+          <ul class="list-unstyled li-space-lg">
+              <li class="address"><i class="fas fa-map-marker-alt"></i>Surat,India.</li>
+              <li><i class="fas fa-phone"></i><a href="tel:9624441873">+91 9624441873</a></li>
+              <li><i class="fas fa-envelope"></i><a href="mailto:tanaypatil36@gmail.com">tanaypatil36@gmail.com</a></li>
+          </ul>
           <form>
             <div className="form-group">
               <input
