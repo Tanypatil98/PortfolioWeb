@@ -2,7 +2,8 @@ import React, { useState} from "react"
 import Seo from "../components/Seo"
 import {
   FaPhone,
-  FaMapMarkerAlt
+  FaMapMarkerAlt,
+  FaMailBulk
 } from "react-icons/fa"
 const contact = () => {
   
@@ -39,7 +40,7 @@ const contact = () => {
           <ul class="list-unstyled li-space-lg">
               <li class="address"><FaMapMarkerAlt class="social-icon"></FaMapMarkerAlt>Surat,India.</li>
               <li><FaPhone class="social-icon"></FaPhone><a href="tel:9624441873">+91 9624441873</a></li>
-              <li><FiMail class="social-icon"></FiMail><a href="mailto:tanaypatil36@gmail.com">tanaypatil36@gmail.com</a></li>
+              <li><FaMailBulk class="social-icon"></FaMailBulk><a href="mailto:tanaypatil36@gmail.com">tanaypatil36@gmail.com</a></li>
           </ul>
           <form data-netlify="true" name="Contact" method="post" onSubmit={submitHandler}>
             <div className="form-group">
