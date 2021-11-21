@@ -5,6 +5,11 @@ import {
   FaMapMarkerAlt,
   FaMailBulk
 } from "react-icons/fa"
+const encode = (data) => {
+  return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+}
 const Contact = () => {
 
   const [name, setName] = useState('');
@@ -13,15 +18,16 @@ const Contact = () => {
   const [subject, setSubject] = useState('');
   const [description, setDescription] = useState('');
   const submitHandler = () => {
-    let formData = new FormData();
-    formData.set("name_your", name)
-    formData.set("email", email)
-    formData.set("subject", subject)
-    formData.set("message", description)
-    fetch("/", {
+    let formData = {
+    name: name,
+    email: email,
+    subject: subject,
+    description: description
+    }
+    fetch("/contact/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: formData
+      body: encode({ "form-name": "Contact", ...formData })
     }).then(() => {
       setSuceess('Thank you for Contact us. your message is Sent.');
       setName('');
@@ -42,7 +48,7 @@ const Contact = () => {
             <li><FaPhone class="social-icon"></FaPhone><a href="tel:9624441873">+91 9624441873</a></li>
             <li><FaMailBulk class="social-icon"></FaMailBulk><a href="mailto:tanaypatil36@gmail.com">tanaypatil36@gmail.com</a></li>
           </ul>
-          <form data-netlify="true" name="Contact" method="post" onSubmit="submit">
+          <form data-netlify="true" name="Contact" method="post" data-netlify-honeypot="bot-field" onSubmit={submitHandler}>
             <div className="form-group">
               <input type="hidden" name="form-name" value="Contact" />
               <input
@@ -50,28 +56,28 @@ const Contact = () => {
                 name="name"
                 placeholder="name"
                 className="form-control"
-                // onChange={(e) => setName(e.target.value)}
+                onChange={(e) => setName(e.target.value)}
               />
               <input
                 type="email"
                 name="email"
                 placeholder="email"
                 className="form-control"
-                // onChange={(e) => setEmail(e.target.value)}
+                onChange={(e) => setEmail(e.target.value)}
               />
               <input
                 type="text"
                 name="subject"
                 placeholder="subject"
                 className="form-control"
-                // onChange={(e) => setSubject(e.target.value)}
+                onChange={(e) => setSubject(e.target.value)}
               />
               <textarea
                 name="message"
                 rows="5"
                 placeholder="message"
                 className="form-control"
-                // onChange={(e) => setDescription(e.target.value)}
+                onChange={(e) => setDescription(e.target.value)}
               ></textarea>
             </div>
             <button type="submit" className="submit-btn btn">
