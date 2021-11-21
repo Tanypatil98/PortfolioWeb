@@ -3,7 +3,6 @@ import Projects from "../components/Projects"
 import projects from "../constants/project"
 import Seo from "../components/Seo"
 const ProjectsPage = () => {
-  console.log("p", projects)
   return (
     <>
       <Seo title="Projects" />
