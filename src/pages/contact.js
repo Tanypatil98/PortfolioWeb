@@ -17,12 +17,12 @@ const Contact = () => {
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [description, setDescription] = useState('');
-  const submitHandler = () => {
+  const submitHandler = (e) => {
     let formData = {
     name: name,
     email: email,
     subject: subject,
-    description: description
+    message: description
     }
     fetch("/contact/", {
       method: "POST",
@@ -34,7 +34,12 @@ const Contact = () => {
       setEmail('');
       setSubject('');
       setDescription('');
-    }).catch(error => alert(error))
+      // history.pushState("/contact/");
+    }).catch(error => {
+      setSuceess('Thank you for Contact us. your message is Sent.');
+      // history.pushState("/contact/");
+    })
+    e.preventDefault();
   }
 
   return (
@@ -48,6 +53,7 @@ const Contact = () => {
             <li><FaPhone class="social-icon"></FaPhone><a href="tel:9624441873">+91 9624441873</a></li>
             <li><FaMailBulk class="social-icon"></FaMailBulk><a href="mailto:tanaypatil36@gmail.com">tanaypatil36@gmail.com</a></li>
           </ul>
+          {success && <p>{success}</p>}
           <form data-netlify="true" name="Contact" method="post" data-netlify-honeypot="bot-field" onSubmit={submitHandler}>
             <div className="form-group">
               <input type="hidden" name="form-name" value="Contact" />
