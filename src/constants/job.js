@@ -8,6 +8,18 @@ const jobs = [
         },{
             id: 1,
             name: "How use redux and backend nodejs work and database like firebase, mongo and aws."
+        },{
+            id: 2,
+            name: "Building stable and maintainable codebases using React."
+        },{
+            id: 3,
+            name: "Performing bug fixes and code reviews."
+        },{
+            id: 4,
+            name: "Developing and maintaining Git repository and establishing a great collaboration among the cross-functional development team"
+        },{
+            id: 5,
+            name: "Listening and understanding the customer requirements."
         }],
         position: "React Developer"
     },
