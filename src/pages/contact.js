@@ -50,7 +50,7 @@ const Contact = () => {
           <h3>Get In Touch</h3>
           <ul class="list-unstyled li-space-lg">
             <li class="address"><FaMapMarkerAlt class="social-icon"></FaMapMarkerAlt>Surat,India.</li>
-            <li><FaPhone class="social-icon"></FaPhone><a href="tel:9624441873">+91 9624441873</a></li>
+            <li><FaPhone class="social-icon"></FaPhone><a href="tel:8758657133">+91 8758657133</a></li>
             <li><FaMailBulk class="social-icon"></FaMailBulk><a href="mailto:tanaypatil36@gmail.com">tanaypatil36@gmail.com</a></li>
           </ul>
           {success && <p>{success}</p>}
