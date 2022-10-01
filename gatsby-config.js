@@ -11,6 +11,7 @@ module.exports = {
     description: `Awesome WebDev Portfolio built with Gatsby`,
     titleTemplate: `%s | Tanay Patil`,
     url: `https://tanaypatil.netlify.app/`,
+    twitterUsername: `tanaypa85900150`,
     image: `/mainImg.png`,
   },
   plugins: [
