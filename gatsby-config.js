@@ -10,8 +10,7 @@ module.exports = {
     title: `Tanay Portfolio`,
     description: `Awesome WebDev Portfolio built with Gatsby`,
     titleTemplate: `%s | Tanay Patil`,
-    url: `https://temp-strapi-portfolio.netlify.app`,
-    twitterUsername: `@john_smilga`,
+    url: `https://tanaypatil.netlify.app/`,
     image: `/mainImg.png`,
   },
   plugins: [
