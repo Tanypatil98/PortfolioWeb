@@ -29,22 +29,13 @@ const projects = [
     index: 2,
     slug: "travelsite",
   }, {
-    description: "This site has created to app version and the update control. It has created by the React app.",
-    title: "App-Manager",
-    github: "https://github.com/Tanypatil98/app-manager",
-    stack: ["Html", "Css", "React", "Es6", "Redux", "Firebase"],
-    url: "https://appmanagerweb.web.app/",
-    image: "https://tanypatil98.github.io/Portfolio/images/Capture.JPG",
-    index: 3,
-    slug: "appmanager",
-  }, {
     description: "It is the blog static website created using gatsby js and wordpress as backend.",
     title: "Gtasby Blog Site",
     github: "https://github.com/Tanypatil98/Gatsby-wordpress",
     stack: ["Html", "Css", "React", "Gatsby.Js", "GraphQl", "Wordpress", "Apollo"],
     url: "",
     image: "https://tanypatil98.github.io/Portfolio/images/localhost_8000_.png",
-    index: 4,
+    index: 3,
     slug: "blogsite",
   }, {
     description: "It is the web portfolio created using gatsby js.",
@@ -53,7 +44,7 @@ const projects = [
     stack: ["Html", "Css", "React", "Gatsby.Js", "GraphQl"],
     url: "https://tanaypatil.netlify.app/",
     image: "https://tanypatil98.github.io/Portfolio/images/mainimg.PNG",
-    index: 5,
+    index: 4,
     slug: "portfolio",
   }, {
     description: "In This I have build the same as canva. It's used to your own custom T-shirt,etc.",
@@ -62,7 +53,7 @@ const projects = [
     stack: ["Html", "Css", "React", "FabricJs"],
     url: "",
     image: "https://tanypatil98.github.io/Portfolio/images/CustomOwn.png",
-    index: 6,
+    index: 5,
     slug: "customOwn",
   }, {
     description: "In This I have build the Apis of the articles, feeds, comments, push-ntification and etc. Also Build Admin Panel.",
@@ -71,7 +62,7 @@ const projects = [
     stack: ["Html", "Css", "React", "Node", "Express", "TypeScript", "MongoDb", "Socket.io"],
     url: "",
     image: "https://tanypatil98.github.io/Portfolio/images/dashboard.png",
-    index: 7,
+    index: 6,
     slug: "jd-Management",
   },]
 
