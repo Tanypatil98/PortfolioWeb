@@ -1,6 +1,6 @@
 const jobs = [
     {
-        company: "FreeLance",
+        company: "FreeLancer",
         date: "Jun 2022 - Present",
         desc: [{
             id: 0,
