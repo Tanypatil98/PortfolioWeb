@@ -49,9 +49,9 @@ const Contact = () => {
         <article className="contact-form">
           <h3>Get In Touch</h3>
           <ul class="list-unstyled li-space-lg">
-            <li class="address"><FaMapMarkerAlt class="social-icon"></FaMapMarkerAlt>Surat,India.</li>
-            <li><FaPhone class="social-icon"></FaPhone><a href="tel:8758657133">+91 8758657133</a></li>
-            <li><FaMailBulk class="social-icon"></FaMailBulk><a href="mailto:tanaypatil36@gmail.com">tanaypatil36@gmail.com</a></li>
+            <li class="address"><FaMapMarkerAlt class="social-icon"></FaMapMarkerAlt> Surat,India.</li>
+            <li><FaPhone class="social-icon"></FaPhone> <a href="tel:8758657133" style={{color: "black"}}>+91 8758657133</a></li>
+            <li><FaMailBulk class="social-icon"></FaMailBulk> <a href="mailto:tanaypatil36@gmail.com" style={{color: "black"}}>tanaypatil36@gmail.com</a></li>
           </ul>
           {success && <p>{success}</p>}
           <form data-netlify="true" name="Contact" method="post" data-netlify-honeypot="bot-field" onSubmit={submitHandler}>
