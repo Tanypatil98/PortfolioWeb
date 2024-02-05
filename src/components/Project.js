@@ -15,7 +15,7 @@ const Project = ({
 }) => {
   const data = useStaticQuery(graphql`
     query {
-      allFile {
+      allFile(filter: { relativePath: { regex: `${image}` } }) {
         nodes {
           relativePath
           childImageSharp {
