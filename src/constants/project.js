@@ -34,7 +34,7 @@ const projects = [
     github: "",
     stack: ["React" , "Redux",  "Node js", "Express js", "Sql"],
     url: "https://ami.ab-inbev.com/",
-    image: "https://tanypatil98.github.io/Portfolio/images/ami.ab-inbev.com_.png",
+    image: "https://tanypatil98.github.io/Portfolio/images/project-4.png",
     index: 3,
     slug: "assetManagement",
   }, {
@@ -43,7 +43,7 @@ const projects = [
     github: "https://github.com/Tanypatil98/PortfolioWeb",
     stack: ["Html", "Css", "React", "Gatsby.Js", "GraphQl"],
     url: "https://tanaypatil.netlify.app/",
-    image: "https://tanypatil98.github.io/Portfolio/images/mainimg.PNG",
+    image: "https://tanypatil98.github.io/Portfolio/images/project-5.png",
     index: 4,
     slug: "portfolio",
   }, {
@@ -52,7 +52,7 @@ const projects = [
     github: "",
     stack: ["React" , "Redux",  "Node js", "Express js", "Sql"],
     url: "https://acoemjeappnaz.azurewebsites.net/",
-    image: "https://tanypatil98.github.io/Portfolio/images/acoemjeappnaz.azurewebsites.net_.png",
+    image: "https://tanypatil98.github.io/Portfolio/images/project-6.png",
     index: 5,
     slug: "parkingSolution",
   }, {
