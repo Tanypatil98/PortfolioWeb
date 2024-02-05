@@ -7,7 +7,7 @@ const projects = [
     github: "",
     stack: ["React" , "Redux",  "Node js", "Express js", "Sql"],
     url: "https://thehope.fm/",
-    image: "https://tanypatil98.github.io/Portfolio/images/project-11.png",
+    image: "project-11.png",
     index: 0,
     slug: "HopeFM",
   }, {
@@ -16,7 +16,7 @@ const projects = [
     github: "",
     stack: ["React", "Es6", "Redux", "Fabric js"],
     url: "https://www.trendage.com/",
-    image: "https://tanypatil98.github.io/Portfolio/images/project-2.png",
+    image: "project-2.png",
     index: 1,
     slug: "fashionApparel",
   }, {
@@ -25,7 +25,7 @@ const projects = [
     github: "",
     stack: ["React", "Es6", "Redux"],
     url: "http://www.priceline.com/",
-    image: "	https://tanypatil98.github.io/Portfolio/images/project-33.png",
+    image: "project-33.png",
     index: 2,
     slug: "travelsite",
   }, {
@@ -34,7 +34,7 @@ const projects = [
     github: "",
     stack: ["React" , "Redux",  "Node js", "Express js", "Sql"],
     url: "https://ami.ab-inbev.com/",
-    image: "https://tanypatil98.github.io/Portfolio/images/project-4.png",
+    image: "project-4.png",
     index: 3,
     slug: "assetManagement",
   }, {
@@ -43,7 +43,7 @@ const projects = [
     github: "https://github.com/Tanypatil98/PortfolioWeb",
     stack: ["Html", "Css", "React", "Gatsby.Js", "GraphQl"],
     url: "https://tanaypatil.netlify.app/",
-    image: "https://tanypatil98.github.io/Portfolio/images/project-5.png",
+    image: "project-5.png",
     index: 4,
     slug: "portfolio",
   }, {
@@ -52,7 +52,7 @@ const projects = [
     github: "",
     stack: ["React" , "Redux",  "Node js", "Express js", "Sql"],
     url: "https://acoemjeappnaz.azurewebsites.net/",
-    image: "https://tanypatil98.github.io/Portfolio/images/project-6.png",
+    image: "project-6.png",
     index: 5,
     slug: "parkingSolution",
   }, {
