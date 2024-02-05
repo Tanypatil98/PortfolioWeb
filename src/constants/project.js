@@ -61,7 +61,7 @@ const projects = [
     github: "",
     stack: ["React" , "Redux",  "React Native", "Firebase", "Social login"],
     url: "",
-    image: "https://tanypatil98.github.io/Portfolio/images/unnamed.png",
+    image: "unnamed.png",
     index: 6,
     slug: "driveChat",
   },{
@@ -70,7 +70,7 @@ const projects = [
     github: "",
     stack: ["React" , "Redux",  "React Native", "Firebase", "Social login"],
     url: "",
-    image: "https://tanypatil98.github.io/Portfolio/images/unnamed (1).png",
+    image: "unnamed (1).png",
     index: 7,
     slug: "insurance",
   }]
