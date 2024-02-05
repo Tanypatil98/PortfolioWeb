@@ -1,5 +1,5 @@
 import React from "react"
-
+import { graphql, useStaticQuery } from 'gatsby'
 import { FaGithubSquare, FaShareSquare } from "react-icons/fa"
 import { Link } from "gatsby"
 
@@ -13,6 +13,21 @@ const Project = ({
   index,
   slug,
 }) => {
+  const data = useStaticQuery(graphql`
+    query {
+      allFile {
+        nodes {
+          relativePath
+          childImageSharp {
+            fluid {
+              src
+            }
+          }
+        }
+      }
+    }
+  `);
+  console.log(data);
   return (
     <article className="project">
       <img
