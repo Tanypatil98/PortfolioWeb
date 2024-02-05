@@ -13,7 +13,7 @@ const Project = ({
   index,
   slug,
 }) => {
-  console.log(image, type of image);
+  console.log(image);
   const filterImg = image;
   const data = useStaticQuery(graphql`
     query($filterImg: String!) {
