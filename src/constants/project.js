@@ -7,7 +7,7 @@ const projects = [
     github: "",
     stack: ["React" , "Redux",  "Node js", "Express js", "Sql"],
     url: "https://thehope.fm/",
-    image: "https://tanypatil98.github.io/Portfolio/images/thehope.fm_.png",
+    image: "https://tanypatil98.github.io/Portfolio/images/project-11.png",
     index: 0,
     slug: "HopeFM",
   }, {
@@ -16,7 +16,7 @@ const projects = [
     github: "",
     stack: ["React", "Es6", "Redux", "Fabric js"],
     url: "https://www.trendage.com/",
-    image: "https://tanypatil98.github.io/Portfolio/images/www.trendage.com_.png",
+    image: "https://tanypatil98.github.io/Portfolio/images/project-2.png",
     index: 1,
     slug: "fashionApparel",
   }, {
@@ -25,7 +25,7 @@ const projects = [
     github: "",
     stack: ["React", "Es6", "Redux"],
     url: "http://www.priceline.com/",
-    image: "	https://tanypatil98.github.io/Portfolio/images/www.priceline.com__vrid=e3c0a4d560ed7d2f9c68eeab4f8cb41d.png",
+    image: "	https://tanypatil98.github.io/Portfolio/images/project-33.png",
     index: 2,
     slug: "travelsite",
   }, {
