@@ -14,8 +14,8 @@ const Project = ({
   slug,
 }) => {
   const data = useStaticQuery(graphql`
-    query {
-      allFile(filter: { relativePath: { regex: image } }) {
+    query($image: String!) {
+      allFile(filter: { relativePath: { regex: $image, ne: null } }) {
         nodes {
           relativePath
           childImageSharp {
@@ -28,6 +28,7 @@ const Project = ({
     }
   `);
   console.log(data);
+  image = data.allFile.nodes.filter(obj => obj.relativePath.includes(image))[0].childImageSharp.fluid.src;
   return (
     <article className="project">
       <img
