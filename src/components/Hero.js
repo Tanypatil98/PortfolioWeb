@@ -16,7 +16,7 @@ const Hero = () => {
             <Link to="/contact" className="btn">
               contact me
             </Link>
-            <a download href={resume} className="btn">Resume</a>
+            <a download href={resume} className="btn">Download CV</a>
             <div className="social-links">
               {socialLinks.map(link => {
                 return (
