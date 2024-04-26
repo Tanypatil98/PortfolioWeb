@@ -842,7 +842,7 @@ Projects
     grid-row: 1 / 1;
   }
   .project:nth-of-type(even) .project-img {
-    grid-column: 5 / -1;
+    grid-column: 7 / -1;
     grid-row: 1 / 1;
   }
   .project:nth-of-type(even) .project-info {
