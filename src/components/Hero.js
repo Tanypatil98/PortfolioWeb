@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import socialLinks from "../constants/social_links"
 import heroImg from "../assets/images/profile1.png"
-import resume from "../assets/Tanay's Resume.pdf"
+import resume from "../assets/Tanay Patil Resume.pdf"
 
 const Hero = () => {
   return (
