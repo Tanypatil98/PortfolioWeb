@@ -1,25 +1,19 @@
 const jobs = [
     {
-        company: "FreeLancer",
+        company: "Acronotics",
         date: "Jun 2022 - Present",
         desc: [{
             id: 0,
-            name: "Working with React modules, services, templates, directives, services and dependency injection and merging them with the staging environment.",
+            name: "Led the design and development of scalable APIs using Django and Node.js, serving both internal and external stakeholders.",
         },{
             id: 1,
-            name: "Working on MongoDB database concepts such as locking, transactions, indexes, schema design."
+            name: "Developed and maintained automation workflows using n8n for streamlining operations."
         },{
             id: 2,
-            name: "Created multiple databases with collections and choosing shard key based on the requirements."
+            name: "Employed Git and Agile practices to improve code quality and project management."
         },{
             id: 3,
-            name: "Designed entire application using MVC based architecture with help of used javascript for client-side validations and create interactive front-end GUI"
-        },{
-            id: 4,
-            name: "Developing and maintaining Git repository and establishing a great collaboration among the cross-functional development team"
-        },{
-            id: 5,
-            name: "Used Jira used for continuous integration and bug tracking."
+            name: "Conducted regular knowledge-sharing sessions and maintained comprehensive documentation for team onboarding."
         }],
         position: "Full Stack Developer"
     },
@@ -45,19 +39,22 @@ const jobs = [
             id: 5,
             name: "Listening and understanding the customer requirements."
         }],
-        position: "React Developer"
+        position: "Full Stack Developer"
     },
     {
         company: "Dynamic Dreamz Pvt. Ltd.",
         date: "November 2020 - December 2020",
         desc: [{
             id: 0,
-            name: "How Shopify and Wordpress work and used of database.s",
+            name: "Developed dynamic UI components based on React principles.",
         },{
             id: 1,
-            name: "How use custom Programing and use Custom Plugin."
+            name: "Translated client requirements into technical designs, delivering high-quality code on time."
+        },{
+            id: 2,
+            name: "Contributed to project scalability by building modular, reusable components."
         }],
-        position: "Shopify and Wordpress Developer"
+        position: "React Developer"
     }
 ]
 
